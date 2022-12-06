@@ -40,47 +40,7 @@
       <widget class="QWidget" name="page_2_pclshow">
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0">
-         <widget class="QVTKOpenGLWidget" name="pclShow" native="true">
-          <widget class="QToolBox" name="toolBox">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>360</y>
-             <width>68</width>
-             <height>130</height>
-            </rect>
-           </property>
-           <property name="currentIndex">
-            <number>0</number>
-           </property>
-           <widget class="QWidget" name="page">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>68</width>
-              <height>68</height>
-             </rect>
-            </property>
-            <attribute name="label">
-             <string>Page 1</string>
-            </attribute>
-           </widget>
-           <widget class="QWidget" name="page_2">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>68</width>
-              <height>68</height>
-             </rect>
-            </property>
-            <attribute name="label">
-             <string>Page 2</string>
-            </attribute>
-           </widget>
-          </widget>
-         </widget>
+         <widget class="QVTKOpenGLWidget" name="pclShow" native="true"/>
         </item>
        </layout>
       </widget>
@@ -121,6 +81,7 @@
     </property>
     <addaction name="calibration"/>
     <addaction name="setParam"/>
+    <addaction name="actionIP"/>
    </widget>
    <widget class="QMenu" name="menu_4">
     <property name="title">
@@ -614,6 +575,11 @@
   <action name="calibration">
    <property name="text">
     <string>一键标定</string>
+   </property>
+  </action>
+  <action name="actionIP">
+   <property name="text">
+    <string>IP设置</string>
    </property>
   </action>
  </widget>

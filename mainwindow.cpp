@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "QDebug"
+
 volatile bool finsih;
 volatile bool finish_line;
 MainWindow::MainWindow(QWidget *parent)
