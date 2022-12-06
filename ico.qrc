@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/toolbar_ico">
+        <file>icons/disconnect.png</file>
+        <file>icons/connect.png</file>
+        <file>icons/save.png</file>
+        <file>icons/folder-open.png</file>
+        <file>icons/srcimg.png</file>
+        <file>icons/contour.png</file>
+        <file>icons/centerline.png</file>
+        <file>icons/range.png</file>
+        <file>icons/pointcloud.png</file>
+    </qresource>
+</RCC>
