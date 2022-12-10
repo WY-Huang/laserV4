@@ -212,6 +212,76 @@ MainWindow::MainWindow(QWidget *parent)
 
     // 深度图及点云图参数设置的工具栏
 
+     connect(ui->actionbackward,&QAction::triggered,[=]()
+       {
+        vtkNew<vtkCamera> camera;
+        camera->SetPosition(-1,0,0);
+        camera->SetViewUp (0, 0, 1);
+        camera->SetFocalPoint (0, 0, 0);
+        renderer->SetActiveCamera(camera);
+        renderer->ResetCamera();
+        renderer->Render();
+        ui->pclShow->update();
+    });
+
+     connect(ui->actiondown,&QAction::triggered,[=]()
+       {
+        vtkNew<vtkCamera> camera;
+        camera->SetPosition(0,0,-1);
+        camera->SetViewUp (0, 0, 1);
+        camera->SetFocalPoint (0, 0, 0);
+        renderer->SetActiveCamera(camera);
+        renderer->ResetCamera();
+        renderer->Render();
+        ui->pclShow->update();
+    });
+
+     connect(ui->actionforward,&QAction::triggered,[=]()
+       {
+        vtkNew<vtkCamera> camera;
+        camera->SetPosition(1,0,0);
+        camera->SetViewUp (0, 0, 1);
+        camera->SetFocalPoint (0, 0, 0);
+        renderer->SetActiveCamera(camera);
+        renderer->ResetCamera();
+        renderer->Render();
+        ui->pclShow->update();
+    });
+     connect(ui->actionleft,&QAction::triggered,[=]()
+       {
+        vtkNew<vtkCamera> camera;
+        camera->SetPosition(0,1,0);
+        camera->SetViewUp (0, 0, 1);
+        camera->SetFocalPoint (0, 0, 0);
+        renderer->SetActiveCamera(camera);
+        renderer->ResetCamera();
+        renderer->Render();
+        ui->pclShow->update();
+    });
+
+     connect(ui->actionright,&QAction::triggered,[=]()
+       {
+        vtkNew<vtkCamera> camera;
+        camera->SetPosition(0,-1,0);
+        camera->SetViewUp (0, 0, 1);
+        camera->SetFocalPoint (0, 0, 0);
+        renderer->SetActiveCamera(camera);
+        renderer->ResetCamera();
+        renderer->Render();
+        ui->pclShow->update();
+    });
+
+     connect(ui->actionup,&QAction::triggered,[=]()
+       {
+        vtkNew<vtkCamera> camera;
+        camera->SetPosition(0,0,1);
+        camera->SetViewUp (0, 0, 1);
+        camera->SetFocalPoint (0, 0, 0);
+        renderer->SetActiveCamera(camera);
+        renderer->ResetCamera();
+        renderer->Render();
+        ui->pclShow->update();
+    });
 
     // 一键标定
     connect(ui->calibration, &QAction::triggered, [=](){                //激光头标定

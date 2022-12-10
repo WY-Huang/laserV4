@@ -484,6 +484,23 @@
     </widget>
    </widget>
   </widget>
+  <widget class="QToolBar" name="toolBar_right">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionup"/>
+   <addaction name="actiondown"/>
+   <addaction name="actionleft"/>
+   <addaction name="actionright"/>
+   <addaction name="actionforward"/>
+   <addaction name="actionbackward"/>
+  </widget>
   <action name="connectCam">
    <property name="icon">
     <iconset>
@@ -580,6 +597,78 @@
   <action name="actionIP">
    <property name="text">
     <string>IP设置</string>
+   </property>
+  </action>
+  <action name="actionup">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/toolbar_ico/icons/views/up.png</normaloff>:/toolbar_ico/icons/views/up.png</iconset>
+   </property>
+   <property name="text">
+    <string>up</string>
+   </property>
+   <property name="toolTip">
+    <string>仰视图</string>
+   </property>
+  </action>
+  <action name="actiondown">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/toolbar_ico/icons/views/down.png</normaloff>:/toolbar_ico/icons/views/down.png</iconset>
+   </property>
+   <property name="text">
+    <string>down</string>
+   </property>
+   <property name="toolTip">
+    <string>俯视图</string>
+   </property>
+  </action>
+  <action name="actionleft">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/toolbar_ico/icons/views/left.png</normaloff>:/toolbar_ico/icons/views/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>left</string>
+   </property>
+   <property name="toolTip">
+    <string>左视图</string>
+   </property>
+  </action>
+  <action name="actionright">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/toolbar_ico/icons/views/right.png</normaloff>:/toolbar_ico/icons/views/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>right</string>
+   </property>
+   <property name="toolTip">
+    <string>右视图</string>
+   </property>
+  </action>
+  <action name="actionforward">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/toolbar_ico/icons/views/foward.png</normaloff>:/toolbar_ico/icons/views/foward.png</iconset>
+   </property>
+   <property name="text">
+    <string>forward</string>
+   </property>
+   <property name="toolTip">
+    <string>前视图</string>
+   </property>
+  </action>
+  <action name="actionbackward">
+   <property name="icon">
+    <iconset resource="ico.qrc">
+     <normaloff>:/toolbar_ico/icons/views/backward.png</normaloff>:/toolbar_ico/icons/views/backward.png</iconset>
+   </property>
+   <property name="text">
+    <string>backward</string>
+   </property>
+   <property name="toolTip">
+    <string>后视图</string>
    </property>
   </action>
  </widget>

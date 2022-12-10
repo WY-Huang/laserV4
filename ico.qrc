@@ -9,5 +9,11 @@
         <file>icons/centerline.png</file>
         <file>icons/range.png</file>
         <file>icons/pointcloud.png</file>
+        <file>icons/views/up.png</file>
+        <file>icons/views/right.png</file>
+        <file>icons/views/left.png</file>
+        <file>icons/views/foward.png</file>
+        <file>icons/views/down.png</file>
+        <file>icons/views/backward.png</file>
     </qresource>
 </RCC>
