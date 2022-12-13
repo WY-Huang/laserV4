@@ -1012,6 +1012,8 @@ void MainWindow::InitSetEdit()
 
     ui->IpAddr->setText("192.168.1.2");
     ui->exposureValue->setText(QString::number(m_mcs->cam->sop_cam[0].i32_exposure));
+    ui->sampleDis->setText("10");
+    ui->sampleVel->setText("2");
 
     ui->stackedWidget->setCurrentIndex(0);
 }
