@@ -500,6 +500,7 @@
    <addaction name="actionright"/>
    <addaction name="actionforward"/>
    <addaction name="actionbackward"/>
+   <addaction name="separator"/>
   </widget>
   <action name="connectCam">
    <property name="icon">
